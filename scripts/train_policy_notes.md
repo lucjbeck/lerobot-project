@@ -74,11 +74,9 @@ Evaluate the policy by pointing `--policy.path` at the Hub model:
 
 (full eval command comes in Phase 9 / Phase 10)
 
-## Run log (fill in)
+## Run log
 
-- Start time:
-- End time:
-- Final loss:
-- Steps completed:
-- Checkpoint pushed: lucbeck/act-blue-block-v1 (yes/no)
-- Observations:
+- Steps completed: 50,000
+- Checkpoint pushed: `lucbeck/act-blue-block-v1` (yes)
+- Compute: Google Colab, T4 GPU
+- Final loss / exact runtime: not recorded

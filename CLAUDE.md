@@ -91,13 +91,12 @@ Camera frame → HSV threshold → largest contour → zone (left/center/right) 
 
 Key scripts:
 - [scripts/cv_baseline_detector.py](scripts/cv_baseline_detector.py) — working HSV color detector with live preview
-- [scripts/cv_baseline_controller_stub.py](scripts/cv_baseline_controller_stub.py) — placeholder poses (TODO)
-- [scripts/summarize_results.py](scripts/summarize_results.py) — reads `data_logs/evaluation_trials.csv`, prints success rates by category and failure breakdown
+- [scripts/summarize_results.py](scripts/summarize_results.py) — reads `data_logs/evaluation_trials.csv` (created during Phase 10 evaluation), prints success rates by category and failure breakdown
 - [scripts/check_camera.py](scripts/check_camera.py) — probes camera indices 0–4
 
 Data files:
-- [configs/environment_template.env](configs/environment_template.env) — all hardware variables (fill in during Phase 2)
-- [data_logs/evaluation_trials.csv](data_logs/evaluation_trials.csv) — one row per trial: `trial,date,policy,object_color,start_position,pickup_success,correct_bin,full_success,failure_type,notes` (header only until Phase 10 evaluation)
+- [configs/environment_template.env](configs/environment_template.env) — all hardware variables (ports, IDs, camera indices)
+- `data_logs/evaluation_trials.csv` — written during Phase 10; columns: `trial,date,policy,object_color,start_position,pickup_success,correct_bin,full_success,failure_type,notes`
 
 ## Rules
 
@@ -116,15 +115,6 @@ Data files:
 5. Public documentation
 6. Extensions
 
-## Key placeholders (fill in during Phase 2)
+## Hardware variables
 
-```
-HF_USER=""            # fill in your Hugging Face username
-ROBOT_TYPE="so101_follower"
-TELEOP_TYPE="so101_leader"
-FOLLOWER_PORT="/dev/tty.usbmodem5B415316401"
-LEADER_PORT="/dev/tty.usbmodem5B415320881"
-FOLLOWER_ID="luc_follower_arm"
-LEADER_ID="luc_leader_arm"
-CAMERA_INDEX="0"      # confirm with: python scripts/check_camera.py
-```
+All hardware variables (HF username, robot/teleop types, ports, IDs, camera indices) live in [configs/environment_template.env](configs/environment_template.env). Keep calibration IDs stable once set — LeRobot stores calibration data by ID.

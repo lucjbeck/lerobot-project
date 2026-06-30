@@ -4,12 +4,6 @@ Training an [ACT](https://github.com/tonyzhaozh/act) (Action Chunking Transforme
 
 > **Status:** End-to-end pipeline complete through *training*. A 23-episode demonstration dataset was collected and an ACT policy was trained (50k steps) and pushed to the Hugging Face Hub. **Quantitative on-robot evaluation is in progress** — see [Results](#results).
 
-## Demo
-
-📹 **Watch the arm in action:** [PASTE MY X/VIDEO LINK HERE]
-
-*(Teleoperated demonstration / trained-policy rollout of the blue-block pick-and-place task.)*
-
 ## What this project is
 
 A tabletop imitation-learning project built on a real SO-101 arm:
@@ -42,14 +36,7 @@ The current task is *"pick up the blue block and place it in the blue bowl"* fro
 
 ## Results
 
-> Evaluation is in progress; the numbers below are placeholders until on-robot trials are logged. Reported metrics will come straight from [data_logs/evaluation_trials.csv](data_logs/evaluation_trials.csv) via [scripts/summarize_results.py](scripts/summarize_results.py) — no hand-edited numbers.
-
-| Metric | ACT policy | OpenCV baseline |
-|---|---|---|
-| Pickup success rate | [PLACEHOLDER]% | [PLACEHOLDER]% |
-| Correct-bin rate | [PLACEHOLDER]% | [PLACEHOLDER]% |
-| Full-task success | [PLACEHOLDER]% | [PLACEHOLDER]% |
-| Trials | [PLACEHOLDER] | [PLACEHOLDER] |
+Quantitative on-robot evaluation is in progress. The ACT policy vs. OpenCV baseline comparison (pickup success, correct-bin rate, full-task success) will be reported here once trials are logged — generated directly from the trial logs via [scripts/summarize_results.py](scripts/summarize_results.py), with no hand-edited numbers.
 
 **Demonstration dataset (v1):** 23 episodes / ~9,495 frames, blue-block pick-and-place.
 
