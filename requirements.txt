@@ -1,0 +1,6 @@
+lerobot
+opencv-python
+numpy
+pandas
+matplotlib
+huggingface_hub

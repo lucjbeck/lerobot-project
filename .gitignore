@@ -1,0 +1,54 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# --- Secrets / credentials ---
+.env
+*.env
+# keep the safe placeholder template (contains no real secrets)
+!configs/environment_template.env
+*.key
+*.pem
+secrets.*
+
+# --- Datasets (kept on the Hugging Face Hub, not in git) ---
+data/
+datasets/
+*.parquet
+*.arrow
+
+# --- Model checkpoints / weights (kept on the HF Hub) ---
+checkpoints/
+outputs/
+*.ckpt
+*.pt
+*.pth
+*.safetensors
+*.bin
+
+# --- Large media (link to a hosted video instead) ---
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# --- Training logs ---
+wandb/
+runs/
+*.log
+
+# --- Hugging Face cache ---
+.cache/
+huggingface/
+**/.cache/huggingface/
+
+# --- OS / editor cruft ---
+.DS_Store
+*~
+.idea/
+.vscode/

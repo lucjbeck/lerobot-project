@@ -1,0 +1,11 @@
+episode,date,task,object_color,start_position,teleop_success,notes
+1,2026-06-11,blue_block_to_blue_bowl,blue,center,yes,clean pickup
+2,2026-06-11,blue_block_to_blue_bowl,blue,center,yes,clean pickup
+3,2026-06-11,blue_block_to_blue_bowl,blue,center_left,yes,clean pickup
+4,2026-06-11,blue_block_to_blue_bowl,blue,center_left,yes,clean pickup
+5,2026-06-11,blue_block_to_blue_bowl,blue,left,yes,clean pickup
+6,2026-06-11,blue_block_to_blue_bowl,blue,left,yes,clean pickup
+7,2026-06-11,blue_block_to_blue_bowl,blue,center_right,yes,clean pickup
+8,2026-06-11,blue_block_to_blue_bowl,blue,center_right,yes,clean pickup
+9,2026-06-11,blue_block_to_blue_bowl,blue,right,yes,clean pickup
+10,2026-06-11,blue_block_to_blue_bowl,blue,right,yes,clean pickup
