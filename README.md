@@ -4,6 +4,16 @@ Training an [ACT](https://github.com/tonyzhaozh/act) (Action Chunking Transforme
 
 > **Status:** End-to-end pipeline complete through *training*. A 23-episode demonstration dataset was collected and an ACT policy was trained (50k steps) and pushed to the Hugging Face Hub. **Quantitative on-robot evaluation is in progress** — see [Results](#results).
 
+## Demo
+
+*The SO-101 arm performing the blue-block pick-and-place task.*
+
+<!-- TO ADD THE VIDEO: on github.com open this README, click the pencil (Edit),
+     put the cursor on the blank line just below this comment, then drag in
+     "lerobot success.mp4" (8.3 MB, under GitHub's 10 MB limit). GitHub uploads it
+     and inserts a https://github.com/user-attachments/assets/... URL that renders
+     as an inline player. Commit, then run `git pull` locally to sync. -->
+
 ## What this project is
 
 A tabletop imitation-learning project built on a real SO-101 arm:
