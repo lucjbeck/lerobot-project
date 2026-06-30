@@ -8,7 +8,7 @@ A tabletop imitation-learning benchmark: a LeRobot leader/follower arm sorts col
 
 ## Current phase
 
-All phases are unchecked in README.md — project is at **Phase 0/1** (repo scaffold exists, software not yet installed). Always identify the current phase before suggesting next steps.
+As of 2026-06 the project is through **training**: hardware setup, calibration, teleoperation, a 23-episode dataset, and a 50k-step ACT policy are done and pushed to the Hugging Face Hub. On-robot evaluation and the OpenCV baseline are the next phases. Always confirm the current phase in README.md before suggesting next steps.
 
 ## Environment setup
 
@@ -97,9 +97,7 @@ Key scripts:
 
 Data files:
 - [configs/environment_template.env](configs/environment_template.env) — all hardware variables (fill in during Phase 2)
-- [data_logs/evaluation_trials.csv](data_logs/evaluation_trials.csv) — one row per trial: `trial,date,policy,object_color,start_position,pickup_success,correct_bin,full_success,failure_type,notes`
-- [data_logs/failure_log.csv](data_logs/failure_log.csv) — failure analysis
-- [results/results_table.md](results/results_table.md) — final comparison table
+- [data_logs/evaluation_trials.csv](data_logs/evaluation_trials.csv) — one row per trial: `trial,date,policy,object_color,start_position,pickup_success,correct_bin,full_success,failure_type,notes` (header only until Phase 10 evaluation)
 
 ## Rules
 
