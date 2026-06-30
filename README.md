@@ -6,6 +6,10 @@ Training an [ACT](https://github.com/tonyzhaozh/act) (Action Chunking Transforme
 
 ## Demo
 
+
+https://github.com/user-attachments/assets/aa71edd4-2198-4f9e-bb4d-b695df84a285
+
+
 *The SO-101 arm performing the blue-block pick-and-place task.*
 
 <!-- TO ADD THE VIDEO: on github.com open this README, click the pencil (Edit),
